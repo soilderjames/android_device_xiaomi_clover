@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The Xiaomi-SDM660 Project
+# Copyright (C) 2019 The Xiaomi-SDM660 Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,6 +21,11 @@
 # definition file).
 #
 
-# inherit MI PAD 4 HAVOC-OS device config
+# inherit MI PAD 4 LineageOS device config
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_clover.mk
+
+COMMON_LUNCH_CHOICES := \
+		lineage_clover-eng \
+		lineage_clover-userdebug \
+		lineage_clover-user
