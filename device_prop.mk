@@ -78,4 +78,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Ultra Sound
 PRODUCT_PROPERTY_OVERRIDES += \
 	audio.chk.cal.us=0
-
