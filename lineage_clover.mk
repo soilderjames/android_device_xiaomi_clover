@@ -21,6 +21,29 @@
 # definition file).
 #
 
-# inherit MI PAD 4 HAVOC-OS device config
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_clover.mk
+# Inherit device configuration
+$(call inherit-product, device/xiaomi/clover/device.mk)
+
+$(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/config.mk)
+
+# Inherit from Lineage custom product configuration
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+DEVICE_PATH := device/xiaomi/clover
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.lineage.maintainer=PythonLimited
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+  PRIVATE_BUILD_DESC="clover-user 8.1.0 OPM1.171019.019 V10.2.1.0.ODJCNXM release-keys"
+
+BUILD_FINGERPRINT := xiaomi/clover/clover:8.1.0/OPM1.171019.019/V10.2.1.0.ODJCNXM:user/release-keys
+
+# Device identifier
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_PLATFORM := SDM660
+PRODUCT_NAME := lineage_clover
+PRODUCT_CHARACTERISTICS := tablet
+PRODUCT_DEVICE := clover
+PRODUCT_MODEL := MI PAD 4
