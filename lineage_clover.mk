@@ -35,9 +35,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.lineage.maintainer=PythonLimited
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-  PRIVATE_BUILD_DESC="clover-user 8.1.0 OPM1.171019.019 V10.2.1.0.ODJCNXM release-keys"
+  PRIVATE_BUILD_DESC="taimen-user 9 PQ1A.190105.004 5148680 release-keys"
 
-BUILD_FINGERPRINT := xiaomi/clover/clover:8.1.0/OPM1.171019.019/V10.2.1.0.ODJCNXM:user/release-keys
+BUILD_FINGERPRINT := google/taimen/taimen:9/PQ1A.190105.004/5148680:user/release-keys
 
 # Device identifier
 PRODUCT_BRAND := Xiaomi
