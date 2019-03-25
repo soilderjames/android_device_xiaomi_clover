@@ -50,6 +50,11 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1200
 
+# Camera
+PRODUCT_PACKAGES += \
+    camera.sdm660 \
+    libmm-qcamera
+
 # Device properties
 $(call inherit-product, $(DEVICE_PATH)/device_prop.mk)
 

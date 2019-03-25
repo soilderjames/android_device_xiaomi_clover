@@ -23,6 +23,10 @@
 
 include device/xiaomi/sdm660-common/PlatformConfig.mk
 
+# Camera
+TARGET_TS_MAKEUP := true
+CAMERA_DAEMON_NOT_PRESENT := true
+
 # Device Path
 DEVICE_PATH := device/xiaomi/clover
 
