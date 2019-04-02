@@ -21,6 +21,6 @@
 # definition file).
 #
 
-# inherit MI PAD 4 HAVOC-OS device config
+# inherit MI PAD 4 carbon device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_clover.mk
+    $(LOCAL_DIR)/carbon_clover.mk

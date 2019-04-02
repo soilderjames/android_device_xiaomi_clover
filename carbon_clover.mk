@@ -24,19 +24,23 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/clover/device.mk)
 
-# Inherit from Havoc custom product configuration
-$(call inherit-product, vendor/havoc/config/common.mk)
+# Inherit Carbon GSM telephony parts
+$(call inherit-product, vendor/carbon/config/gsm.mk)
+
+# Inherit Carbon product configuration
+$(call inherit-product, vendor/carbon/config/common.mk)
 
 DEVICE_PATH := device/xiaomi/clover
 
+# CarbonRom Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.havoc.maintainer=rcstar6696
+    ro.carbon.maintainer="Rcstar6696"
 
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
-PRODUCT_NAME := havoc_clover
+PRODUCT_NAME := carbon_clover
 PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_DEVICE := clover
 PRODUCT_MODEL := MI PAD 4
