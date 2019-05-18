@@ -5,8 +5,8 @@
 # Currently we dont have e2fsck compiled. So fs check would failed.
 
 # <mount_point>  <fstype>  <device>        <device2>                  <flags>
-/data             ext4     /dev/block/bootdevice/by-name/userdata     flags=encryptable=footer;length=-16384
-/cache            ext4     /dev/block/bootdevice/by-name/cache        flags=backup=1;wipeingui;wipeduringfactoryreset
+/data             f2fs     /dev/block/bootdevice/by-name/userdata     flags=encryptable=footer;length=-16384
+/cache            f2fs     /dev/block/bootdevice/by-name/cache        flags=backup=1;wipeingui;wipeduringfactoryreset
 /system           ext4     /dev/block/bootdevice/by-name/system       flags=backup=1;wipeingui
 /system_image     emmc     /dev/block/bootdevice/by-name/system
 /boot             emmc     /dev/block/bootdevice/by-name/boot         flags=backup=1;flashimg=1
