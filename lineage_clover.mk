@@ -24,8 +24,6 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/clover/device.mk)
 
-$(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/config.mk)
-
 # Inherit from Lineage custom product configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
