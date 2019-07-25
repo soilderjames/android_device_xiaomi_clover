@@ -34,6 +34,12 @@ DEVICE_PATH := device/xiaomi/clover
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.lineage.maintainer=PythonLimited
 
+# Build Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	PRIVATE_BUILD_DESC="clover-user 8.1.0 OPM1.171019.019 V10.2.1.0.ODJCNXM release-keys"
+
+BUILD_FINGERPRINT := xiaomi/clover/clover:8.1.0/OPM1.171019.019/V10.2.1.0.ODJCNXM:user/release-keys
+
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
