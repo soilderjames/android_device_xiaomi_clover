@@ -21,11 +21,26 @@
 # definition file).
 #
 
-# inherit MI PAD 4 lineage-OS device config
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_clover.mk
+# Inherit device configuration
+$(call inherit-product, device/xiaomi/clover/device.mk)
+# Inherit some common Evolution X stuff.
+CUSTOM_BUILD_TYPE := UNOFFICIAL
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
 
-COMMON_LUNCH_CHOICES := \
-		aosp_clover-eng \
-		aosp_clover-userdebug \
-		aosp_clover-user
+
+# Device identifier
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_CHARACTERISTICS := tablet
+PRODUCT_DEVICE := clover
+PRODUCT_MODEL := MI PAD 4
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+# Build Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="clover-user 8.1.0 OPM1.171019.019 9.7.4 release-keys"
+# Inherit from custom vendor
+$(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
