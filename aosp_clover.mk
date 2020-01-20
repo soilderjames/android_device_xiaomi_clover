@@ -28,7 +28,6 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_INCREMENTAL_BLOCK_BASED := true
 $(call inherit-product, vendor/aosp/config/common_full_tablet_wifionly.mk)
 
 # Device identifier
