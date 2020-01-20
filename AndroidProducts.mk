@@ -21,7 +21,7 @@
 # definition file).
 #
 
-# inherit MI PAD 4 lineage-OS device config
+# inherit MI PAD 4 PixelExperience device config
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_clover.mk
 
